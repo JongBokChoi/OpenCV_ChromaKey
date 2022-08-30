@@ -27,8 +27,6 @@ while True:
         ret1,frame1=cap1.read()
         ret2,frame2=cap2.read()
 
-        if not ret2:
-            break
         frame2 = cv2.resize(frame2, (w, h))
 
         # HSV 색 공간에서 녹색 영역을 검출하여 합성
